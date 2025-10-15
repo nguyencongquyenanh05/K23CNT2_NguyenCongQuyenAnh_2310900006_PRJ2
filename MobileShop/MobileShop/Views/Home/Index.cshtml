@@ -1,0 +1,188 @@
+﻿@{
+    ViewData["Title"] = "MobileShop - Trang chủ";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0fdfa; /* xanh ngọc rất nhạt */
+        color: #0f172a;
+    }
+
+    /* 🌟 HEADER */
+    .header {
+        background: linear-gradient(90deg, #0d9488, #14b8a6);
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+        .header h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+    /* 🛒 DANH MỤC SẢN PHẨM */
+    .product-section {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+        .product-section h2 {
+            font-size: 1.8rem;
+            color: #0d9488;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    /* 💫 CARD SẢN PHẨM */
+    .product-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(6px);
+        border-radius: 18px;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        overflow: hidden;
+        text-align: center;
+        padding: 15px;
+    }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 12px;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .product-card h3 {
+            margin: 12px 0 5px;
+            font-size: 1.1rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .product-card p {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+    .price {
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: #0d9488;
+    }
+
+    /* 🔘 NÚT */
+    .btn-buy {
+        margin-top: 12px;
+        background: linear-gradient(90deg, #0d9488, #14b8a6);
+        color: white;
+        padding: 10px 22px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-weight: 500;
+    }
+
+        .btn-buy:hover {
+            background: linear-gradient(90deg, #14b8a6, #0d9488);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+        }
+
+    /* 📱 RESPONSIVE */
+    
+
+    {
+        font-size: 1.8rem;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    }
+</style>
+
+<div class="header">
+    <h1>📱 MobileShop</h1>
+    <p>Thế giới công nghệ chính hãng – Giá tốt nhất hôm nay!</p>
+</div>
+
+<div class="product-section">
+    <h2>💎 Sản phẩm nổi bật</h2>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="/css/images/iphone15promax.jpg" alt="iPhone 15 Pro Max" />
+            <h3>iPhone 15 Pro Max</h3>
+            <p>Hiệu năng cực đỉnh, sang trọng đẳng cấp.</p>
+            <div class="price">36.990.000₫</div>
+            <button class="btn-buy">Mua ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/css/images/s24ultra.jpg" alt="Samsung S24 Ultra" />
+            <h3>Samsung S24 Ultra</h3>
+            <p>Camera AI 200MP, pin khủng, thiết kế cao cấp.</p>
+            <div class="price">28.490.000₫</div>
+            <button class="btn-buy">Mua ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/css/images/ipadprom2.jpg" alt="iPad Pro M2" />
+            <h3>iPad Pro M2</h3>
+            <p>Màn hình Liquid Retina XDR, chip M2 mạnh mẽ.</p>
+            <div class="price">25.990.000₫</div>
+            <button class="btn-buy">Mua ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/css/images/macbookairm3.jpg" alt="MacBook Air M3" />
+            <h3>MacBook Air M3</h3>
+            <p>Siêu mỏng nhẹ, hiệu năng vượt trội, pin 20h.</p>
+            <div class="price">32.490.000₫</div>
+            <button class="btn-buy">Mua ngay</button>
+        </div>
+
+        <div class="product-card">
+            <img src="/css/images/airpodspro2.jpg" alt="AirPods Pro 2" />
+            <h3>AirPods Pro 2</h3>
+            <p>Chống ồn chủ động, âm thanh đỉnh cao.</p>
+            <div class="price">5.490.000₫</div>
+            <button class="btn-buy">Mua ngay</button>
+        </div>
+    </div>
+</div>

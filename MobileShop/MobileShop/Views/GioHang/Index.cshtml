@@ -1,0 +1,47 @@
+﻿@model List<MobileShop.Controllers.GioHangItem>
+
+@{
+    ViewData["Title"] = "Giỏ hàng";
+}
+
+<h2 class="text-danger">🛒 Giỏ hàng của bạn</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Giỏ hàng đang trống.</div>
+}
+else
+{
+    <table class="table table-bordered align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var it in Model)
+            {
+                <tr>
+                    <td style="width:100px">
+                        <img src="~/images/@it.HinhAnh" alt="@it.TenSp" style="max-width:80px;object-fit:contain" />
+                    </td>
+                    <td>@it.TenSp</td>
+                    <td>@it.Gia.ToString("N0") ₫</td>
+                    <td>@it.SoLuong</td>
+                    <td>@(it.Gia* it.SoLuong).ToString("N0") ₫</td>
+                    <td>
+                        <a asp-action="Xoa" asp-route-id="@it.MaSp" class="btn btn-sm btn-danger">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-action="XoaTatCa" class="btn btn-outline-danger">Xóa toàn bộ</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary ms-2">Tiếp tục mua sắm</a>
+}

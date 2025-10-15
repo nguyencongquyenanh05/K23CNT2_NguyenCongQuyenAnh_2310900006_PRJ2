@@ -1,0 +1,34 @@
+﻿@model MobileShop.Models.DanhMuc
+
+@{
+    ViewData["Title"] = "Chi tiết danh mục";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white d-flex align-items-center">
+            <i class="fas fa-folder-open me-2"></i>
+            <h4 class="mb-0">Chi tiết danh mục</h4>
+        </div>
+
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-3 fw-bold">Mã danh mục</dt>
+                <dd class="col-sm-9">@Model.MaDanhMuc</dd>
+
+                <dt class="col-sm-3 fw-bold">Tên danh mục</dt>
+                <dd class="col-sm-9">@Model.TenDanhMuc</dd>
+            </dl>
+        </div>
+
+        <div class="card-footer bg-light d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+            </a>
+            <a asp-action="Edit" asp-route-id="@Model.MaDanhMuc" class="btn btn-warning text-white">
+                <i class="fas fa-edit me-1"></i> Chỉnh sửa
+            </a>
+        </div>
+    </div>
+</div>

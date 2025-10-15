@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MobileShop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MobileShop.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\airpodspro2.jpg",
+      "PackagePath": "staticwebassets\\images\\airpodspro2.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\apple.png",
+      "PackagePath": "staticwebassets\\images\\apple.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\applewatchultra2.jpg",
+      "PackagePath": "staticwebassets\\images\\applewatchultra2.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\asus.png",
+      "PackagePath": "staticwebassets\\images\\asus.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\ipadprom2.jpg",
+      "PackagePath": "staticwebassets\\images\\ipadprom2.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\iphone15promax.jpg",
+      "PackagePath": "staticwebassets\\images\\iphone15promax.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\macbookairm3.jpg",
+      "PackagePath": "staticwebassets\\images\\macbookairm3.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\oppo.png",
+      "PackagePath": "staticwebassets\\images\\oppo.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\opporeno10.jpg",
+      "PackagePath": "staticwebassets\\images\\opporeno10.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\opporeno11.jpg",
+      "PackagePath": "staticwebassets\\images\\opporeno11.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\realme.png",
+      "PackagePath": "staticwebassets\\images\\realme.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\rogzephyrusg14.jpg",
+      "PackagePath": "staticwebassets\\images\\rogzephyrusg14.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\s23ultra.jpg",
+      "PackagePath": "staticwebassets\\images\\s23ultra.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\s24ultra.jpg",
+      "PackagePath": "staticwebassets\\images\\s24ultra.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\samsung.png",
+      "PackagePath": "staticwebassets\\images\\samsung.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\vivo.png",
+      "PackagePath": "staticwebassets\\images\\vivo.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\vivov30.jpg",
+      "PackagePath": "staticwebassets\\images\\vivov30.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\xiaomi.png",
+      "PackagePath": "staticwebassets\\images\\xiaomi.png"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\images\\xiaomi14tpro.jpg",
+      "PackagePath": "staticwebassets\\images\\xiaomi14tpro.jpg"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\K23CNT2-NguyenCongQuyenAnh-2310900006\\MobileShop\\MobileShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MobileShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MobileShop.props",
+      "PackagePath": "build\\MobileShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MobileShop.props",
+      "PackagePath": "buildMultiTargeting\\MobileShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MobileShop.props",
+      "PackagePath": "buildTransitive\\MobileShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

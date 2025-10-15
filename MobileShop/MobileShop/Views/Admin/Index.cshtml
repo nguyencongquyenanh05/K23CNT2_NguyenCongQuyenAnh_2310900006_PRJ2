@@ -1,0 +1,126 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Trang quản trị";
+}
+
+<div class="container-fluid">
+    <h2 class="fw-bold mb-4 text-primary">
+        👋 Chào mừng đến với Bảng điều khiển quản trị
+    </h2>
+
+    <!-- THỐNG KÊ NHANH -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body text-center">
+                    <h5 class="text-secondary">📱 Sản phẩm</h5>
+                    <h3 class="fw-bold text-primary">128</h3>
+                    <small class="text-muted">Tổng số sản phẩm</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body text-center">
+                    <h5 class="text-secondary">📂 Danh mục</h5>
+                    <h3 class="fw-bold text-success">12</h3>
+                    <small class="text-muted">Danh mục đang hoạt động</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body text-center">
+                    <h5 class="text-secondary">🧾 Đơn hàng</h5>
+                    <h3 class="fw-bold text-warning">45</h3>
+                    <small class="text-muted">Đơn hàng trong tuần</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body text-center">
+                    <h5 class="text-secondary">👥 Khách hàng</h5>
+                    <h3 class="fw-bold text-danger">257</h3>
+                    <small class="text-muted">Khách hàng đăng ký</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIỂU ĐỒ & HOẠT ĐỘNG GẦN ĐÂY -->
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-header bg-white border-0">
+                    <h5 class="fw-bold text-secondary mb-0">📊 Thống kê doanh thu</h5>
+                </div>
+                <div class="card-body">
+                    <canvas id="salesChart" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-header bg-white border-0">
+                    <h5 class="fw-bold text-secondary mb-0">🕓 Hoạt động gần đây</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">🛒 Đơn hàng #1025 đã được xác nhận</li>
+                    <li class="list-group-item">👤 Khách hàng mới: Nguyễn Văn A</li>
+                    <li class="list-group-item">📦 Thêm sản phẩm mới “iPhone 15 Pro”</li>
+                    <li class="list-group-item">💬 Nhận 3 phản hồi từ khách hàng</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT BIỂU ĐỒ -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    const salesChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Th1', 'Th2', 'Th3', 'Th4', 'Th5', 'Th6'],
+            datasets: [{
+                label: 'Doanh thu (triệu VNĐ)',
+                data: [12, 19, 14, 25, 22, 30],
+                borderColor: '#007bff',
+                backgroundColor: 'rgba(0,123,255,0.1)',
+                fill: true,
+                tension: 0.4,
+                borderWidth: 2,
+                pointRadius: 4,
+                pointBackgroundColor: '#007bff'
+            }]
+        },
+        options: {
+            plugins: { legend: { display: false } },
+            scales: {
+                y: { beginAtZero: true },
+                x: { grid: { display: false } }
+            }
+        }
+    });
+</script>
+
+<style>
+    .card {
+        transition: 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    h2 {
+        font-weight: 700;
+    }
+</style>

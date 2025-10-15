@@ -1,0 +1,31 @@
+﻿@model IEnumerable<MobileShop.Models.SanPham>
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<div class="container mt-4">
+    <h2 class="fw-bold text-danger mb-4 text-center">📦 Quản lý sản phẩm</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm border-0">
+                    <img src="~/images/@item.HinhAnh"
+                         class="card-img-top"
+                         style="height:220px;object-fit:contain;background-color:#f8f9fa;"
+                         alt="@item.TenSp" />
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">@item.TenSp</h6>
+                        <p class="text-danger fw-bold">@string.Format("{0:N0} ₫", item.Gia)</p>
+                        <a asp-action="Details" asp-route-id="@item.MaSp" class="btn btn-outline-primary btn-sm">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

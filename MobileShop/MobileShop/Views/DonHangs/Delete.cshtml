@@ -1,0 +1,49 @@
+﻿@model MobileShop.Models.DonHang
+
+@{
+    ViewData["Title"] = "Xóa đơn hàng";
+}
+
+<div class="container mt-5">
+    <div class="card shadow border-0">
+        <div class="card-header bg-danger text-white text-center">
+            <h3><i class="fa-solid fa-triangle-exclamation me-2"></i> Xác nhận xóa đơn hàng</h3>
+        </div>
+
+        <div class="card-body">
+            <p class="text-center text-muted mb-4">Bạn có chắc chắn muốn xóa đơn hàng này không? Hành động này không thể hoàn tác.</p>
+
+            <dl class="row">
+                <dt class="col-sm-3 fw-semibold text-secondary">Ngày đặt</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(m => m.NgayDat)</dd>
+
+                <dt class="col-sm-3 fw-semibold text-secondary">Tổng tiền</dt>
+                <dd class="col-sm-9 text-danger fw-bold">
+                    @(Model?.TongTien != null ? string.Format("{0:N0} ₫", Model.TongTien) : "0 ₫")
+                </dd>
+
+                <dt class="col-sm-3 fw-semibold text-secondary">Trạng thái</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(m => m.TrangThai)</dd>
+
+                <dt class="col-sm-3 fw-semibold text-secondary">Khách hàng</dt>
+                <dd class="col-sm-9">
+                    @(
+                                        Model?.MaKhNavigation != null
+                                        ? (Model.MaKhNavigation.HoTen ?? ("#" + Model.MaKhNavigation.MaKh.ToString()))
+                                        : "Không có thông tin khách hàng"
+                                        )
+                </dd>
+            </dl>
+
+            <form asp-action="Delete" method="post" class="text-center mt-4">
+                <input type="hidden" asp-for="MaDh" />
+                <button type="submit" class="btn btn-danger px-4 me-2">
+                    <i class="fa-solid fa-trash-can me-1"></i> Xóa
+                </button>
+                <a asp-action="Index" class="btn btn-secondary px-4">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Quay lại danh sách
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

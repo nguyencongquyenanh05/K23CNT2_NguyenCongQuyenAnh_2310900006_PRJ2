@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Trang quản trị";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 bg-dark text-white min-vh-100 p-3">
+            <h3 class="text-danger mb-4 fw-bold">Admin Panel</h3>
+            <ul class="nav flex-column">
+                <!-- 🔹 Nút Trang chủ (khôi phục về bản gốc) -->
+                <li class="nav-item mb-2">
+                    <a asp-controller="Admin" asp-action="Index" class="nav-link text-white">
+                        🏠 Trang chủ
+                    </a>
+                </li>
+
+                <!-- 🔹 Sản phẩm: load bằng AJAX -->
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link text-white" onclick="loadPartial('SanPhamPartial')">
+                        📱 Sản phẩm
+                    </a>
+                </li>
+
+                <!-- 🔹 Danh mục (vẫn để nguyên nếu có trang riêng) -->
+                <li class="nav-item mb-2">
+                    <a asp-controller="DanhMuc" asp-action="Index" class="nav-link text-white">
+                        📁 Danh mục
+                    </a>
+                </li>
+
+                <!-- 🔹 Đơn hàng -->
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link text-white" onclick="loadPartial('DonHangPartial')">
+                        🧾 Đơn hàng
+                    </a>
+                </li>
+
+                <!-- 🔹 Khách hàng -->
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link text-white" onclick="loadPartial('KhachHangPartial')">
+                        👥 Khách hàng
+                    </a>
+                </li>
+
+                <hr />
+                <li class="nav-item">
+                    <a asp-action="Logout" class="nav-link text-white">
+                        🚪 Đăng xuất (Quản trị viên)
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Nội dung hiển thị -->
+        <div class="col-md-9 col-lg-10 p-4">
+            <div id="adminContent">
+                <h4>Chào mừng đến trang quản trị!</h4>
+                <p>Chọn một mục ở menu bên trái để xem chi tiết.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function loadPartial(partialName) {
+            $("#adminContent").load(`/Admin/${partialName}`);
+        }
+    </script>
+}

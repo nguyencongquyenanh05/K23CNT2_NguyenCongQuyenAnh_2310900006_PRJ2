@@ -1,0 +1,80 @@
+﻿@model MobileShop.Models.SanPham
+
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-header bg-danger text-white text-center rounded-top-4">
+            <h3><i class="fa-solid fa-triangle-exclamation me-2"></i> Xác nhận xóa sản phẩm</h3>
+        </div>
+
+        <div class="card-body">
+            <p class="text-center text-muted mb-4">
+                Bạn có chắc chắn muốn <strong>xóa sản phẩm này</strong> không?
+                Hành động này <span class="text-danger fw-semibold">không thể hoàn tác</span>.
+            </p>
+
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                    {
+                        <img src="~/images/@Model.HinhAnh" alt="@Model.TenSp" class="img-fluid rounded-3 border shadow-sm" style="max-height: 200px; object-fit: contain;" />
+                    }
+                    else
+                    {
+                        <div class="border rounded-3 bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <span class="text-muted">Không có ảnh</span>
+                        </div>
+                    }
+                </div>
+
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-semibold text-secondary">Tên sản phẩm</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.TenSp)</dd>
+
+                        <dt class="col-sm-4 fw-semibold text-secondary">Giá</dt>
+                        <dd class="col-sm-8 text-danger fw-bold">
+                            @String.Format("{0:N0} ₫", Model.Gia)
+                        </dd>
+
+                        <dt class="col-sm-4 fw-semibold text-secondary">Mô tả</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.MoTa)</dd>
+
+                        <dt class="col-sm-4 fw-semibold text-secondary">Danh mục</dt>
+                        <dd class="col-sm-8">
+                            @(Model.MaDanhMucNavigation?.TenDanhMuc ?? "Không xác định")
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <form asp-action="Delete" method="post" class="text-center mt-4">
+                <input type="hidden" asp-for="MaSp" />
+                <button type="submit" class="btn btn-danger px-4 me-2">
+                    <i class="fa-solid fa-trash-can me-1"></i> Xóa sản phẩm
+                </button>
+                <a asp-action="Index" class="btn btn-secondary px-4">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Quay lại danh sách
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    dt {
+        margin-bottom: .25rem;
+    }
+
+    dd {
+        margin-bottom: 1rem;
+    }
+</style>

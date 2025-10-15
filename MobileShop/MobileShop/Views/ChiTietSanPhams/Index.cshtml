@@ -1,0 +1,83 @@
+﻿@model IEnumerable<MobileShop.Models.ChiTietSanPham>
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold text-primary mb-0">
+            <i class="fas fa-cogs me-2"></i> Danh sách chi tiết sản phẩm
+        </h2>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus me-1"></i> Thêm chi tiết mới
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Mã chi tiết</th>
+                        <th>Sản phẩm</th>
+                        <th>Cấu hình</th>
+                        <th>Mô tả chi tiết</th>
+                        <th>Màu sắc</th>
+                        <th>Số lượng tồn</th>
+                        <th class="text-end">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.MaCtsp</td>
+                                <td>@item.MaSpNavigation?.TenSp</td>
+                                <td>@item.CauHinh</td>
+                                <td class="text-truncate" style="max-width: 250px;">@item.MoTaChiTiet</td>
+                                <td>@item.MauSac</td>
+                                <td>
+                                    @if (item.SoLuongTon > 10)
+                                    {
+                                        <span class="badge bg-success">@item.SoLuongTon</span>
+                                    }
+                                    else if (item.SoLuongTon > 0)
+                                    {
+                                        <span class="badge bg-warning text-dark">@item.SoLuongTon</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">Hết hàng</span>
+                                    }
+                                </td>
+                                <td class="text-end">
+                                    <a asp-action="Details" asp-route-id="@item.MaCtsp" class="btn btn-sm btn-outline-info me-1">
+                                        <i class="fas fa-info-circle"></i> Chi tiết
+                                    </a>
+                                    <a asp-action="Edit" asp-route-id="@item.MaCtsp" class="btn btn-sm btn-outline-primary me-1">
+                                        <i class="fas fa-edit"></i> Sửa
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.MaCtsp" class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-trash"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="7" class="text-center text-muted py-3">
+                                <i class="fas fa-box-open me-2"></i> Chưa có chi tiết sản phẩm nào được thêm.
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

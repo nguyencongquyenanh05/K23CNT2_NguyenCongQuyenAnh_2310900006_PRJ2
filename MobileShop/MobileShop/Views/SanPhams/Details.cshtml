@@ -1,0 +1,100 @@
+﻿@model MobileShop.Models.SanPham
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+<div class="container py-5">
+
+    <!-- Tiêu đề -->
+    <div class="text-center mb-4">
+        <h2 class="fw-bold text-danger">📱 @Model.TenSp</h2>
+    </div>
+
+    <div class="row g-5">
+
+        <!-- Ảnh sản phẩm -->
+        <div class="col-md-5 text-center">
+            <img src="~/images/@Model.HinhAnh" alt="@Model.TenSp"
+                 class="img-fluid rounded shadow-sm border"
+                 style="max-height: 400px; object-fit: contain;" />
+        </div>
+
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-7">
+            <h3 class="fw-bold text-primary mb-3">@Model.TenSp</h3>
+
+            <h4 class="text-danger fw-bold mb-3">
+                @String.Format("{0:N0}", Model.Gia) ₫
+            </h4>
+
+            <p class="text-secondary mb-4">
+                @Model.MoTa ?? "Chưa có mô tả chi tiết cho sản phẩm này."
+            </p>
+
+            <div class="mb-2">
+                <strong>Danh mục:</strong> @Model.MaDanhMucNavigation?.TenDanhMuc
+            </div>
+
+            <!-- Thông tin chi tiết -->
+            @if (Model.ChiTietSanPhams != null && Model.ChiTietSanPhams.Any())
+            {
+                var chiTiet = Model.ChiTietSanPhams.FirstOrDefault();
+                <div class="mt-3 p-3 border rounded bg-light">
+                    <h5 class="fw-bold mb-3 text-dark">🔧 Thông tin chi tiết</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Màu sắc:</strong> @chiTiet?.MauSac ?? "Không có"</li>
+                        <li><strong>Cấu hình:</strong> @chiTiet?.CauHinh ?? "Không có"</li>
+                        <li><strong>Số lượng tồn:</strong> @chiTiet?.SoLuongTon ?? 0</li>
+                        <li><strong>Mô tả chi tiết:</strong> @chiTiet?.MoTaChiTiet ?? "Không có"</li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">⚠ Chưa có thông tin chi tiết cho sản phẩm này.</p>
+            }
+
+            <div class="d-flex gap-3 mt-4">
+                <a asp-controller="SanPhams" asp-action="Index" class="btn btn-outline-secondary px-4">
+                    ← Quay lại
+                </a>
+                <button class="btn btn-danger px-4">
+                    🛒 Thêm vào giỏ hàng
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .container {
+        max-width: 950px;
+    }
+
+    h3, h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn-danger {
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            transform: translateY(-2px);
+        }
+
+    .btn-outline-secondary {
+        border-radius: 25px;
+    }
+
+    img {
+        transition: transform 0.3s ease;
+    }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+</style>

@@ -1,0 +1,39 @@
+﻿@model MobileShop.Models.ChiTietDonHang
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">
+                <i class="fas fa-file-invoice me-2"></i>Chi tiết đơn hàng
+            </h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3 fw-bold">Số lượng</dt>
+                <dd class="col-sm-9">@Model.SoLuong</dd>
+
+                <dt class="col-sm-3 fw-bold">Đơn giá</dt>
+                <dd class="col-sm-9">@String.Format("{0:N0}₫", Model.DonGia)</dd>
+
+                <dt class="col-sm-3 fw-bold">Mã đơn hàng</dt>
+                <dd class="col-sm-9">@Model.MaDhNavigation?.MaDh</dd>
+
+                <dt class="col-sm-3 fw-bold">Mã sản phẩm</dt>
+                <dd class="col-sm-9">@Model.MaSpNavigation?.MaSp</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Edit" asp-route-id="@Model.MaCt" class="btn btn-warning me-2">
+                <i class="fas fa-edit"></i> Sửa
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+</div>

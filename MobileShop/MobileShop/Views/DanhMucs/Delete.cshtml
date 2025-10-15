@@ -1,0 +1,41 @@
+﻿@model MobileShop.Models.DanhMuc
+
+@{
+    ViewData["Title"] = "Xóa danh mục";
+}
+
+<div class="container mt-5">
+    <div class="card shadow border-0 rounded-4">
+        <div class="card-header bg-danger text-white rounded-top-4">
+            <h4 class="mb-0"><i class="fa-solid fa-trash-can me-2"></i> Xóa danh mục</h4>
+        </div>
+
+        <div class="card-body">
+            <h5 class="text-center text-danger mb-4">
+                Bạn có chắc chắn muốn xóa danh mục này không?
+            </h5>
+
+            <dl class="row mb-4">
+                <dt class="col-sm-4 fw-semibold text-end">Tên danh mục:</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.TenDanhMuc)</dd>
+            </dl>
+
+            <form asp-action="Delete" method="post" class="text-center">
+                <input type="hidden" asp-for="MaDanhMuc" />
+                <button type="submit" class="btn btn-danger px-4 me-2">
+                    <i class="fa-solid fa-trash me-1"></i> Xóa
+                </button>
+                <a asp-action="Index" class="btn btn-secondary px-4">
+                    <i class="fa-solid fa-arrow-left me-1"></i> Quay lại danh sách
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        max-width: 600px;
+        margin: auto;
+    }
+</style>

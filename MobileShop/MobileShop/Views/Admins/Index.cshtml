@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MobileShop.Models.Admin>
+
+@{
+    ViewData["Title"] = "Quản lý Admin";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-danger">👨‍💼 Danh sách Admin</h2>
+        <div>
+            <a asp-controller="Admin" asp-action="Index" class="btn btn-outline-secondary me-2">
+                ⬅️ Quay lại trang quản trị chính
+            </a>
+            <a asp-action="Create" class="btn btn-success">
+                ➕ Thêm Admin mới
+            </a>
+        </div>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            🚫 Hiện chưa có admin nào trong hệ thống.
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped align-middle shadow-sm">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>ID</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Ngày tạo</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.AdminId</td>
+                        <td>@item.Username</td>
+                        <td>@item.FullName</td>
+                        <td>@item.Email</td>
+                        <td>@item.CreatedAt?.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.AdminId" class="btn btn-sm btn-warning me-1">✏️ Sửa</a>
+                            <a asp-action="Details" asp-route-id="@item.AdminId" class="btn btn-sm btn-info me-1 text-white">👁️ Xem</a>
+                            <a asp-action="Delete" asp-route-id="@item.AdminId" class="btn btn-sm btn-danger">🗑️ Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .btn {
+        border-radius: 10px;
+    }
+</style>
